@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="judul">Latihan DOM</h1>
+    <p id="pesan">Belum ada tindakan.</p>
+    <button id="tombolAksi" type="button">Klik Saya</button>
+    <button id="tombolGaya" type="button">Ubah Gaya</button>
+    <p id="teksGaya">Teks yang bisa diubah gayanya.</p>
+
+    <!-- Tombol sembunyikan/tampilkan paragraf (class CSS) -->
+    <section>
+        <h2>Sembunyikan / Tampilkan Paragraf</h2>
+        <button id="tombolToggle" type="button" aria-controls="paragrafToggle" aria-expanded="true">Sembunyikan Paragraf</button>
+        <p id="paragrafToggle">Paragraf ini dapat disembunyikan dan ditampilkan kembali menggunakan class CSS.</p>
+    </section>
+
+    <section>
+        <h2>Hitung Karakter</h2>
+        <label for="namaInput">Nama:</label>
+        <input type="text" id="namaInput" maxlength="40">
+        <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+    </section>
+
+    <section>
+        <h2>Form Pendaftaran</h2>
+        <form id="formPendaftaran" novalidate>
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" name="nama" type="text">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+
+            <label for="usia">Usia</label>
+            <input id="usia" name="usia" type="number" min="17" max="100">
+
+            <label for="sesiWorkshop">Sesi workshop</label>
+            <select id="sesiWorkshop" name="sesi">
+                <option value="">-- Pilih sesi --</option>
+                <option value="Sesi 1 - Pengenalan DOM (09.00)">Sesi 1 - Pengenalan DOM (09.00)</option>
+                <option value="Sesi 2 - Event Handling (11.00)">Sesi 2 - Event Handling (11.00)</option>
+                <option value="Sesi 3 - Validasi Form (13.00)">Sesi 3 - Validasi Form (13.00)</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+        <p id="pesanSesi" aria-live="polite">Belum ada sesi dipilih.</p>
+        <p id="pesanForm" aria-live="polite"></p>
+    </section>
+
+    <section>
+        <h2>Daftar Tugas</h2>
+        <label for="inputTugas">Tugas baru</label>
+        <input id="inputTugas" type="text">
+        <button id="tambahTugas" type="button">Tambah</button>
+        <p id="pesanTugas" aria-live="polite"></p>
+        <ul id="daftarTugas"></ul>
+    </section>
+</body>
+</html>
