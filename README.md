@@ -23,17 +23,7 @@
 9. Eksperimen tanpa defer. Tag <script> diberi tanpa defer di <head> lalu console diamati (lihat bagian berikut). <br>
 <br>
 
-#### Hasil Eksperimen: Script di <head> tanpa defer
-Yang terjadi: Console menampilkan error seperti Uncaught TypeError: Cannot set properties of null (setting 'textContent'), dan seluruh fitur interaktif tidak berfungsi. <br>
-Penyebab: Browser membaca HTML dari atas ke bawah. Script biasa di <head> langsung dieksekusi dan menghentikan proses parsing sampai selesai, padahal elemen di <body> belum dibuat. 
-Akibatnya document.getElementById("judul") mengembalikan null. Baris judul.textContent = ... lalu melempar error, dan script berhenti sehingga event listener tidak pernah terpasang. <br>
-Solusi:
-Tambahkan atribut defer (script diunduh paralel, dieksekusi setelah HTML selesai di-parse), atau
-letakkan <script> tepat sebelum </body>, atau
-bungkus kode dalam document.addEventListener("DOMContentLoaded", ...). <br>
-<br>
 #### Hasil screenshot setiap perubahan
-
 <img width="468" height="171" alt="Screenshot 2026-11-01 110100" src="https://github.com/user-attachments/assets/e6eafea0-17db-4ad1-8893-e03953d3037b" />
 <img width="766" height="226" alt="Screenshot 2026-11-01 110301" src="https://github.com/user-attachments/assets/d9d2a55a-b2fa-49b2-8616-1e8b52a74645" />
 <img width="761" height="135" alt="Screenshot 2026-11-01 110317" src="https://github.com/user-attachments/assets/b22bf01c-fb40-4cf0-8838-960abb63dd6c" />
