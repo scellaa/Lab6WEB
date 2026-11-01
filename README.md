@@ -17,10 +17,11 @@
 6. Validasi form. Event submit memanggil preventDefault(), lalu memeriksa:
           1) nama tidak kosong dan minimal 3 karakter,
           2) format email valid (regex),
-          3) usia berupa bilangan bulat 17–100.
-7. Dropdown sesi workshop. Event change pada <select> menampilkan sesi yang dipilih pada paragraf #pesanSesi.
-8. To-do list. Tombol "Tambah" membuat <li> berisi teks, tombol Tandai selesai, dan tombol Hapus (item.remove()).
-9. Eksperimen tanpa defer. Tag <script> diberi tanpa defer di <head> lalu console diamati (lihat bagian berikut).
+          3) usia berupa bilangan bulat 17–100. <br>
+7. Dropdown sesi workshop. Event change pada <select> menampilkan sesi yang dipilih pada paragraf #pesanSesi. <br>
+8. To-do list. Tombol "Tambah" membuat <li> berisi teks, tombol Tandai selesai, dan tombol Hapus (item.remove()). <br>
+9. Eksperimen tanpa defer. Tag <script> diberi tanpa defer di <head> lalu console diamati (lihat bagian berikut). <br>
+<br>
 
 #### Hasil Eksperimen: Script di <head> tanpa defer
 Yang terjadi: Console menampilkan error seperti Uncaught TypeError: Cannot set properties of null (setting 'textContent'), dan seluruh fitur interaktif tidak berfungsi. <br>
@@ -30,7 +31,7 @@ Solusi:
 Tambahkan atribut defer (script diunduh paralel, dieksekusi setelah HTML selesai di-parse), atau
 letakkan <script> tepat sebelum </body>, atau
 bungkus kode dalam document.addEventListener("DOMContentLoaded", ...). <br>
-
+<br>
 #### Hasil screenshot setiap perubahan
 <img width="468" height="171" alt="image" src="https://github.com/user-attachments/assets/0a4cb19a-0ef9-45b6-8781-3866b2f4dc68" />
 <img width="766" height="226" alt="image" src="https://github.com/user-attachments/assets/32302a14-94fa-49a5-8514-cbf1d388fa57" />
