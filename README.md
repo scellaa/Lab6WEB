@@ -1,5 +1,5 @@
-## Nama: Mayscela Herliyawati
-## NIM: 312510371
+#### Nama: Mayscela Herliyawati
+#### NIM: 312510371
 
 #### Praktikum ini bertujuan untuk:
 1. Memahami cara memilih dan mengubah elemen HTML melalui DOM (getElementById, textContent, classList).
@@ -33,11 +33,13 @@ letakkan <script> tepat sebelum </body>, atau
 bungkus kode dalam document.addEventListener("DOMContentLoaded", ...). <br>
 <br>
 #### Hasil screenshot setiap perubahan
-<img width="468" height="171" alt="image" src="https://github.com/user-attachments/assets/0a4cb19a-0ef9-45b6-8781-3866b2f4dc68" />
-<img width="766" height="226" alt="image" src="https://github.com/user-attachments/assets/32302a14-94fa-49a5-8514-cbf1d388fa57" />
-<img width="761" height="135" alt="image" src="https://github.com/user-attachments/assets/cd30f47f-772d-4af3-84bc-de1e575e73cd" />
-<img width="505" height="114" alt="image" src="https://github.com/user-attachments/assets/e458fb39-7b32-4821-8056-3e8b7c58a352" />
-<img width="383" height="120" alt="image" src="https://github.com/user-attachments/assets/0bc81cdb-4e8a-4fe9-b393-ce867687e69a" />
-<img width="484" height="311" alt="image" src="https://github.com/user-attachments/assets/40e1b262-c342-45ce-aa08-a2104bd3fe5d" />
-<img width="440" height="136" alt="image" src="https://github.com/user-attachments/assets/d0498977-262d-4030-a6d7-5760e93841f0" />
+
+<img width="468" height="171" alt="Screenshot 2026-11-01 110100" src="https://github.com/user-attachments/assets/e6eafea0-17db-4ad1-8893-e03953d3037b" />
+<img width="766" height="226" alt="Screenshot 2026-11-01 110301" src="https://github.com/user-attachments/assets/d9d2a55a-b2fa-49b2-8616-1e8b52a74645" />
+<img width="761" height="135" alt="Screenshot 2026-11-01 110317" src="https://github.com/user-attachments/assets/b22bf01c-fb40-4cf0-8838-960abb63dd6c" />
+<img width="505" height="114" alt="Screenshot 2026-11-01 110333" src="https://github.com/user-attachments/assets/68fc02c3-ea0b-435e-a57b-0d00ea0399ee" />
+<img width="383" height="120" alt="Screenshot 2026-11-01 110406" src="https://github.com/user-attachments/assets/44387000-ddae-4b07-809d-da0a401204c9" />
+<img width="484" height="311" alt="Screenshot 2026-11-01 110441" src="https://github.com/user-attachments/assets/01c2b6c5-85b4-4f5b-889f-1df2ef6666ec" />
+<img width="440" height="136" alt="Screenshot 2026-11-01 110506" src="https://github.com/user-attachments/assets/1595e44f-b8de-4985-bd8a-03cfd29f3b70" />
+
 
